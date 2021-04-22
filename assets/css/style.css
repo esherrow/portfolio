@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*@import ("")*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yellowtail&display=swap');
 :root{
     --primary-color: #fa6d4a;
     --secondary-color: #fbb458;
@@ -13,7 +13,8 @@
 }
 body{
     color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
    }
 
 /*  HEADER STYLE  */   
@@ -67,10 +68,7 @@ header ul li a:hover {
     text-shadow: none;
 }
 
-/* MAIN SECTION STYLE  */
-section{
-    padding: 60px;
-    }
+/*  HERO STYLE */    
 .hero{
     background-image: url("../images/sunset.jpg");
     background-size: cover;
@@ -82,30 +80,98 @@ section{
     align-items: flex-start;    
 }
 .hero-img{
-    flex: 1 10%;
+    flex: 1 50%;
     /*border: solid 3px var(--secondary-color);
     width: 60%;*/
-    margin: 3.5%;
+    margin: .5%;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;*/
 }
 .hero-img img{
-    width: 60%;
+    width: 30%;
     overflow: auto;
 }
-.hero-tag{
-    width: 35%;
+.hero-name{
+    width: 100%;
+    font-family:'Yellowtail', cursive;
+    font-size: 52px;
+    color:var(--primary-color);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+
+}.hero-tag{
+    width: 100%;
     text-align: right;
     margin: 3.5%;
     color: var(--accent2);
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.2;
+    justify-content: right;
 }
-.hero-name{
-    font-style: italic;
-    font-size: 55px;
+/* MAIN SECTION STYLE  */
+.flex-row {
+    display: flex;
+}
+section{
+    padding: 60px;
+    }
+.section-title{
+    font-size: 48px;
+    color:var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: left;
+    margin: 0 auto 35px auto;
+    width: 30%;
+}
+.bio{
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sample{
+    margin: 20px;
+    background:var(--secondary-color);
     color:var(--primary-color);
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    flex: 1;
+}
+.sample img{
+    width:100%;
+    overflow: auto;
+}
+.sample-title{
+    font-size: 120%;
+    color:var(--accent1);
+}
+.sample-skill{
+    font-family:'Yellowtail', cursive;
+    font-weight: lighter;
+    font-size:120%;
+    margin-bottom: 15px;
+}
+.sample-level{
+    font-size: 100%;
+}
+#contact-me{
+    background: var(--primary-color);
+   }
+#contact-me > * {
+    flex: 1;
+    margin: 10px;
+
+}#contact-me h2{
+    color:var(--secondary-color);
+}
+#contact-me h3{
+    color:var(--accent2);
+    font-size: 32px;
+    font-family:'Yellowtail', cursive;
+}
+#contact-me a{
+    margin:20px 0;
+    /*line-height:1.5;*/
+    font-size:16px;
+    font-style:normal;
 }
 
 /*  FOOTER STYLE  */
