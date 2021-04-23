@@ -27,26 +27,15 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    /*background-image: url("../images/hero-bg.jpg");*/
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     z-index: 9999;
 }   
-/*header h1{
-    font-weight: bold;
-    margin: 0;
-    font-size: 36px;
-    color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   
-}*/
 header a {
     text-decoration: none;
     color: var(--primary-color);
 }
-/*header nav {
-    margin: 7px 0;
-}*/
 header ul {
     display: flex;
     flex-wrap:wrap;
@@ -80,21 +69,22 @@ header ul li a:hover {
     align-items: flex-start;    
 }
 .hero-img{
-    flex: 1 50%;
-    /*border: solid 3px var(--secondary-color);
-    width: 60%;*/
+    flex: 1 40%;
     margin: .5%;
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;*/
+    
 }
 .hero-img img{
     width: 30%;
     overflow: auto;
+    border: solid 3px var(--secondary-color);
+    margin-left: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 .hero-name{
     width: 100%;
     font-family:'Yellowtail', cursive;
-    font-size: 52px;
+    font-size: 325%;
     color:var(--primary-color);
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
 
@@ -103,61 +93,93 @@ header ul li a:hover {
     text-align: right;
     margin: 3.5%;
     color: var(--accent2);
-    font-size: 22px;
+    font-size: 130%;
     line-height: 1.2;
     justify-content: right;
 }
+
 /* MAIN SECTION STYLE  */
 .flex-row {
     display: flex;
 }
+main{
+    background: hsla(12, 95%, 64%, 1);
+
+background: linear-gradient(90deg, hsla(12, 95%, 64%, 1) 0%, hsla(34, 95%, 66%, 1) 50%, hsla(339, 46%, 48%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(12, 95%, 64%, 1) 0%, hsla(34, 95%, 66%, 1) 50%, hsla(339, 46%, 48%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(12, 95%, 64%, 1) 0%, hsla(34, 95%, 66%, 1) 50%, hsla(339, 46%, 48%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#fa6d4a", endColorstr="#fbb458", GradientType=1 );
+}
 section{
     padding: 60px;
-    }
+}
 .section-title{
-    font-size: 48px;
+    font-size: 200%;
     color:var(--secondary-color);
     padding-bottom: 20px;
     text-align: left;
     margin: 0 auto 35px auto;
-    width: 30%;
+    width: 100%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .bio{
     width:100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.bio p{
+    color:var(--accent1);
+}
+.work-sample{
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .sample{
-    margin: 20px;
+    overflow: auto;
+    line-height: 1.5;
+    margin: 10px;
     background:var(--secondary-color);
     color:var(--primary-color);
     flex: 1;
-}
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
 .sample img{
     width:100%;
     overflow: auto;
 }
 .sample-title{
+    padding-left: 5px;
     font-size: 120%;
     color:var(--accent1);
 }
 .sample-skill{
+    padding-left: 5px;
     font-family:'Yellowtail', cursive;
     font-weight: lighter;
+    color:var(--accent2);
     font-size:120%;
     margin-bottom: 15px;
 }
 .sample-level{
+    padding-left: 5px;
     font-size: 100%;
 }
-#contact-me{
-    background: var(--primary-color);
-   }
+
 #contact-me > * {
     flex: 1;
     margin: 10px;
+    justify-content: space-around;
 
 }#contact-me h2{
     color:var(--secondary-color);
@@ -166,10 +188,11 @@ section{
     color:var(--accent2);
     font-size: 32px;
     font-family:'Yellowtail', cursive;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #contact-me a{
     margin:20px 0;
-    /*line-height:1.5;*/
+    line-height:1.5;
     font-size:16px;
     font-style:normal;
 }
