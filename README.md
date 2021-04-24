@@ -10,9 +10,9 @@ Creating a portfolio for a webdeveloper that illustrates best practices, includi
 ## Website
 http://esherrow.github.io/portfolio/index.html
 
-![Image of Hero and Nav](http://esherrow.github.io/portfolio/assets/images/Capture1.PNG)
-![Image of Bio and Body of Work](http://esherrow.github.io/portfolio/assets/images/Capture2.PNG)
-![Image of Body of Work and Contact](http://esherrow.github.io/portfolio/assets/images/Capture3.PNG)
+![Image of Hero and Nav](http://esherrow.github.io/portfolio/assets/images/Capture1.JPG)
+![Image of Bio and Body of Work](http://esherrow.github.io/portfolio/assets/images/Capture2.JPG)
+![Image of Body of Work and Contact](http://esherrow.github.io/portfolio/assets/images/Capture3.JPG)
 
 
 ## Contribution
