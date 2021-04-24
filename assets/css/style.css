@@ -70,15 +70,15 @@ header ul li a:hover {
     align-items: flex-start;    
 }
 .hero-img{
-    flex: 1 40%;
-    margin: .5%;
+    flex: 0 40%;
+    /*margin: .5%;*/
     
 }
 .hero-img img{
-    width: 30%;
+    width: 50%;
     overflow: auto;
     border: solid 3px var(--secondary-color);
-    margin-left: 25px;
+    /*margin-left: 25px;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
@@ -88,7 +88,7 @@ header ul li a:hover {
     font-size: 325%;
     color:var(--primary-color);
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
-
+   
 }.hero-tag{
     width: 100%;
     text-align: right;
@@ -103,7 +103,7 @@ header ul li a:hover {
 /* MAIN SECTION STYLE  */
 .flex-row {
     display: flex;
-}
+    }
 main{
     background: hsla(12, 95%, 64%, 1);
 
@@ -119,12 +119,15 @@ section{
     padding: 60px;
 }
 .section-title{
+    display: flex;
+    align-items: top;
+    justify-content: left; 
     font-size: 200%;
     color:var(--secondary-color);
     text-align: left;
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    flex: 1 40%;
+    
 }
 
 /* BIOGRAPHY */
@@ -138,7 +141,6 @@ section{
 .bio p{
     color:var(--accent1);
     line-height: 1.7;
-    width: 80%;
     font-size: 20px;
     margin: 0 auto;
     text-align: right;
@@ -186,22 +188,25 @@ section{
     font-size: 100%;
 }
 
-/* CONTACT INFO */
-#contact-me > * {
-    flex: 1;
-    margin: 10px;
-    justify-content: space-around;
-
-}#contact-me h2{
+#contact-me h2{
     color:var(--secondary-color);
 }
-#contact-me h3{
+.contact-info{
+    display: flex;
+    flex-direction:row;
+    align-items: start;
+    margin: auto;
+}
+.link{ 
+    padding: 10%;
+}
+.contact-info h3{
     color:var(--accent2);
     font-size: 32px;
     font-family:'Yellowtail', cursive;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#contact-me a{
+.contact-info a{
     margin:20px 0;
     line-height:1.5;
     font-size:16px;
@@ -260,10 +265,17 @@ footer div {
         width: 100%;
     }
 
-    .sample {
-        flex: 0 70%;
+    .bio p{
+        text-align: left;
+        margin-left: 5%;
     }
-
+    .sample {
+        flex: 0 40%;
+        justify-content: center;
+    }
+    .contact-info{
+        margin: 0;
+    }
     #contact-me h3{
         flex: 0 55%;
     }
@@ -275,60 +287,33 @@ footer div {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .step-info {
+    .biography {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
     }
 
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
+    .sample {
+        flex: 0 70%;
+        justify-content: center;
     }
 
-    .step-text {
-        flex: 100%;
+    .contact-info {
+        flex-direction: column;
     }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    .hero-form button {
-        width: 100%;
-    }
-
     .section-title {
         width: 95%;
-    }
-
-    .intro p {
-        width: 100%;
-    }
-
-    .trainer {
-        flex: 0 100%;
     }
 
     .contact-info {
         text-align: center;
     }
 
-    .contact-info > * {
-        flex: 0 100%;
-    }
 
-    .contact-form {
-        order: 3;
-    }
+    
+    
 }    
