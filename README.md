@@ -1,4 +1,4 @@
-# for Elizabeth Sherrow
+# Portfolio for Elizabeth Sherrow
 
 ## Purpose
 Creating a portfolio for a webdeveloper that illustrates best practices, including responsive design
