@@ -169,7 +169,7 @@ section{
     margin: 10px;
     background:var(--secondary-color);
     color:var(--primary-color);
-    flex: 1;
+    flex: 0 30%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
